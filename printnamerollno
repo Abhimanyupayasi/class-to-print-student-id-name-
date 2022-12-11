@@ -1,0 +1,31 @@
+#include <iostream>
+
+using namespace std;
+class student
+{ private:
+    int sid;
+    char sname[20];
+    public:
+    void getdata() 
+    {
+        cout<<"Enter student id :";
+        cin>>sid;
+        cout<<"name:";
+        cin>>sname;
+    }
+    
+    void putdata()
+    {
+        cout<<"\n student ID :"<<sid;
+        cout<<"\n student name :"<<sname;
+    }
+};
+
+
+int main()
+{
+    student s;
+    s.getdata();
+    s.putdata();
+    return 0;
+}
